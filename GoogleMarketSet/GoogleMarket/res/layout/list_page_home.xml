@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/list_item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_home_logo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_default" />
+
+            <TextView
+                android:id="@+id/tv_home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_home_logo"
+                android:layout_marginLeft="5dp"
+                android:text="应用名称"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/tv_home_name"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+                android:layout_toRightOf="@id/iv_home_logo"
+                android:layout_marginLeft="5dp"
+                android:progressDrawable="@drawable/home_rating"
+                android:rating="2" />
+
+            <TextView
+                android:id="@+id/tv_contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rb_star"
+                android:layout_toRightOf="@id/iv_home_logo"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:text="3.45MB"
+                android:textColor="#8000"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_home_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_home_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_download" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="下载"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tv_home_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="好雨知时节 ，当春乃发生，随风潜入夜，润物细无声"
+            android:textColor="#9000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
