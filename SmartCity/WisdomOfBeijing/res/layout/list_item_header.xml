@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   <FrameLayout 
+        android:layout_height="180dp"
+        android:layout_width="match_parent">
+        
+   <view.TopNewsViewPager
+       android:id="@+id/vp_tab_menudetail"
+       android:layout_height="180dp"
+       android:layout_width="match_parent"
+       />
+   <RelativeLayout 
+       android:orientation="horizontal"
+       android:background="#a000"
+       android:layout_gravity="bottom"
+       android:padding="8dp"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent">
+       
+       <TextView 
+           android:id="@+id/tv_tab_title"
+           android:textColor="#fff"
+           android:textSize="16sp"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"/>
+       
+       <com.viewpagerindicator.CirclePageIndicator
+	       android:id="@+id/indicator"
+	       android:padding="10dip"
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content"
+	       app:radius="5dp"
+	       app:fillColor="#f00"
+	       app:pageColor="#dcdcdc"
+	       app:strokeWidth="0dp"
+	       android:layout_alignParentRight="true"
+        />
+   </RelativeLayout>
+   </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_frag_menu"
+    android:background="#000"
+    android:orientation="vertical" >
+    <TextView 
+        android:textColor="#fff"
+        android:lines="1"
+        android:textSize="10sp"
+        android:text="智慧北京测试版"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_leftmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_marginTop="50dp"
+        />
+
+</LinearLayout>
